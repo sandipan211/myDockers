@@ -9,6 +9,8 @@ FROM tensorflow/tensorflow:latest-gpu-py3
 #ENV http_proxy http://172.16.117.121:3128
 #ENV https_proxy http://172.16.117.121:3128
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 # Identify the maintainer of an image
 LABEL maintainer="sandipan.sarma@iitg.ac.in"
 LABEL version="0.1"
