@@ -9,7 +9,9 @@ FROM tensorflow/tensorflow:latest-gpu-py3
 #ENV http_proxy http://172.16.117.121:3128
 #ENV https_proxy http://172.16.117.121:3128
 
+#line below is to resolve stdout error of logs in kubernetes
 ENV PYTHONUNBUFFERED=1
+
 ARG DEBIAN_FRONTEND=noninteractive
 
 # Identify the maintainer of an image
