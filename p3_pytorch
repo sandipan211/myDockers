@@ -37,7 +37,7 @@ RUN pip install --upgrade pip
 
 RUN pip3 --no-cache-dir install ipython pandas
 
-pip3 install --upgrade cython
+RUN pip3 --no-cache-dir install cython
 
 RUN pip3 --no-cache-dir install libmr
 
