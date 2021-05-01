@@ -53,6 +53,8 @@ RUN pip3 --no-cache-dir install networkx pathlib pygraphviz
 
 RUN pip3 --no-cache-dir install Pillow
 
+RUN pip3 --no-cache-dir install libmr
+
 RUN pip3 --no-cache-dir install torchvision torchsummary tb-nightly
 
 RUN apt-get install -y git
